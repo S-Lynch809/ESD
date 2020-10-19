@@ -19,16 +19,20 @@ public class Driver {
         
         Scanner input = new Scanner(System.in);
         System.out.print("Enter the length of side 1: ");
-        float side1 = input.nextFloat();
+        int side1 = input.nextInt();
         System.out.print("Enter the length of side 2: ");
-        float side2 = input.nextFloat();
+        int side2 = input.nextInt();
         System.out.print("Enter the length of side 3: ");
-        float side3 = input.nextFloat();
+        int side3 = input.nextInt();
         
         Triangle triangle = new Triangle (side1, side2, side3);
-        System.out.println("Is the Triangle scalene? " + triangle.is_scalene());
-        System.out.println("Is the Triangle Isosceles? " + triangle.is_isosceles());
-        System.out.println("Is the Triangle Equilateral? " + triangle.is_equilateral());
+        
+        if (triangle.is_scalene() == true)
+            System.out.println("The triangle is a scalene triangle.");
+        if (triangle.is_isosceles() == true)
+            System.out.println("The triangle is an isosceles triangle.");
+        if (triangle.is_equilateral() == true)
+            System.out.println("The triangle is an equilateral triangle.");
     }
     
 }

@@ -12,9 +12,9 @@ import java.util.Scanner;
  */
 public class Triangle {
     
-    private float side1, side2, side3;
+    private int side1, side2, side3;
     
-    public Triangle (float s1, float s2, float s3){
+    public Triangle (int s1, int s2, int s3){
         side1 = s1;
         side2 = s2;
         side3 = s3;
